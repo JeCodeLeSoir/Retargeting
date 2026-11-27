@@ -56,9 +56,13 @@ const modelUrls = import.meta.glob("../Models/*.fbx", {
   query: "?url",
 });
 
+const releaseModelUrls = {
+  "Mixamo.fbx": "https://github.com/JeCodeLeSoir/Retargeting/releases/download/v1.0.0/Mixamo.fbx",
+};
+
 const availableModelUrl = (filename) => {
   const entry = Object.entries(modelUrls).find(([path]) => path.endsWith(`/${filename}`));
-  return entry?.[1] ?? null;
+  return entry?.[1] ?? releaseModelUrls[filename] ?? null;
 };
 
 const avatarDefinitions = {
