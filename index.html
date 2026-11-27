@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Démonstration du retargeting humanoïde Unity porté vers Three.js" />
+    <title>Retarget Lab — Three.js</title>
+    <link rel="stylesheet" href="/src/demo.css" />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="viewport" aria-label="Aperçu 3D du personnage et de son squelette"></canvas>
+
+      <header class="topbar">
+        <div class="brand">
+          <span class="brand-mark">R</span>
+          <div>
+            <strong>Retarget Lab</strong>
+            <span>Three.js humanoid protocol</span>
+          </div>
+        </div>
+        <div class="status" aria-live="polite">
+          <span class="status-dot"></span>
+          <span id="statusText">Chargement du FBX…</span>
+        </div>
+      </header>
+
+      <section class="hero-copy" aria-labelledby="demoTitle">
+        <p class="eyebrow">LIVE SKELETON TRANSFER</p>
+        <h1 id="demoTitle">Un même mouvement.<br /><em>Deux structures.</em></h1>
+        <p id="modelDescription">La pose Mixamo est convertie en rotations humanoïdes grâce aux offsets du protocole Unity.</p>
+      </section>
+
+      <aside class="panel" aria-label="Contrôles de la démonstration">
+        <label class="model-picker">
+          <span class="label">AVATAR &amp; MAPPING</span>
+          <select id="modelSelect" aria-label="Choisir un avatar et son mapping"></select>
+        </label>
+        <div class="panel-heading">
+          <div>
+            <span class="label">MODE ACTIF</span>
+            <strong id="modeLabel">Source → Référence</strong>
+          </div>
+          <button id="directionButton" class="icon-button" type="button" title="Inverser le retargeting" aria-label="Inverser le retargeting">⇄</button>
+        </div>
+
+        <div class="meter-row">
+          <div><span id="mappedCount">—</span><small>OS MAPPÉS</small></div>
+          <div><span id="clipDuration">—</span><small>SECONDES</small></div>
+        </div>
+
+        <label class="range-control">
+          <span>Vitesse <output id="speedValue">1.0×</output></span>
+          <input id="speed" type="range" min="0" max="2" step="0.1" value="1" />
+        </label>
+
+        <div class="toggle-list">
+          <label><span>Squelette source</span><input id="sourceSkeleton" type="checkbox" checked /><i></i></label>
+          <label><span>Référence humanoïde</span><input id="referenceSkeleton" type="checkbox" checked /><i></i></label>
+          <label><span>Maillage</span><input id="meshVisibility" type="checkbox" checked /><i></i></label>
+        </div>
+
+        <button id="playButton" class="primary-button" type="button"><span id="playIcon">Ⅱ</span><span id="playLabel">Mettre en pause</span></button>
+        <p class="hint">Glissez pour tourner · molette pour zoomer</p>
+      </aside>
+
+      <div class="legend" aria-hidden="true">
+        <span><i class="cyan"></i>Source FBX</span>
+        <span><i class="orange"></i>Référence humanoïde</span>
+      </div>
+
+      <div id="errorPanel" class="error-panel" hidden></div>
+    </main>
+    <script type="module" src="/src/demo.js"></script>
+  </body>
+</html>
