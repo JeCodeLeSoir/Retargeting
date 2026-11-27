@@ -1,0 +1,446 @@
+{
+  "HumanParent": [
+    {
+      "humanName": 0,
+      "parentHumanName": -1
+    },
+    {
+      "humanName": 1,
+      "parentHumanName": 0
+    },
+    {
+      "humanName": 2,
+      "parentHumanName": 0
+    },
+    {
+      "humanName": 3,
+      "parentHumanName": 1
+    },
+    {
+      "humanName": 4,
+      "parentHumanName": 2
+    },
+    {
+      "humanName": 5,
+      "parentHumanName": 3
+    },
+    {
+      "humanName": 6,
+      "parentHumanName": 4
+    },
+    {
+      "humanName": 7,
+      "parentHumanName": 0
+    },
+    {
+      "humanName": 8,
+      "parentHumanName": 7
+    },
+    {
+      "humanName": 9,
+      "parentHumanName": 54
+    },
+    {
+      "humanName": 10,
+      "parentHumanName": 9
+    },
+    {
+      "humanName": 11,
+      "parentHumanName": 54
+    },
+    {
+      "humanName": 12,
+      "parentHumanName": 54
+    },
+    {
+      "humanName": 13,
+      "parentHumanName": 11
+    },
+    {
+      "humanName": 14,
+      "parentHumanName": 12
+    },
+    {
+      "humanName": 15,
+      "parentHumanName": 13
+    },
+    {
+      "humanName": 16,
+      "parentHumanName": 14
+    },
+    {
+      "humanName": 17,
+      "parentHumanName": 15
+    },
+    {
+      "humanName": 18,
+      "parentHumanName": 16
+    },
+    {
+      "humanName": 19,
+      "parentHumanName": 5
+    },
+    {
+      "humanName": 20,
+      "parentHumanName": 6
+    },
+    {
+      "humanName": 21,
+      "parentHumanName": 10
+    },
+    {
+      "humanName": 22,
+      "parentHumanName": 10
+    },
+    {
+      "humanName": 23,
+      "parentHumanName": 10
+    },
+    {
+      "humanName": 24,
+      "parentHumanName": 17
+    },
+    {
+      "humanName": 25,
+      "parentHumanName": 24
+    },
+    {
+      "humanName": 26,
+      "parentHumanName": 25
+    },
+    {
+      "humanName": 27,
+      "parentHumanName": 17
+    },
+    {
+      "humanName": 28,
+      "parentHumanName": 27
+    },
+    {
+      "humanName": 29,
+      "parentHumanName": 28
+    },
+    {
+      "humanName": 30,
+      "parentHumanName": 17
+    },
+    {
+      "humanName": 31,
+      "parentHumanName": 30
+    },
+    {
+      "humanName": 32,
+      "parentHumanName": 31
+    },
+    {
+      "humanName": 33,
+      "parentHumanName": 17
+    },
+    {
+      "humanName": 34,
+      "parentHumanName": 33
+    },
+    {
+      "humanName": 35,
+      "parentHumanName": 34
+    },
+    {
+      "humanName": 36,
+      "parentHumanName": 17
+    },
+    {
+      "humanName": 37,
+      "parentHumanName": 36
+    },
+    {
+      "humanName": 38,
+      "parentHumanName": 37
+    },
+    {
+      "humanName": 39,
+      "parentHumanName": 18
+    },
+    {
+      "humanName": 40,
+      "parentHumanName": 39
+    },
+    {
+      "humanName": 41,
+      "parentHumanName": 40
+    },
+    {
+      "humanName": 42,
+      "parentHumanName": 18
+    },
+    {
+      "humanName": 43,
+      "parentHumanName": 42
+    },
+    {
+      "humanName": 44,
+      "parentHumanName": 43
+    },
+    {
+      "humanName": 45,
+      "parentHumanName": 18
+    },
+    {
+      "humanName": 46,
+      "parentHumanName": 45
+    },
+    {
+      "humanName": 47,
+      "parentHumanName": 46
+    },
+    {
+      "humanName": 48,
+      "parentHumanName": 18
+    },
+    {
+      "humanName": 49,
+      "parentHumanName": 48
+    },
+    {
+      "humanName": 50,
+      "parentHumanName": 49
+    },
+    {
+      "humanName": 51,
+      "parentHumanName": 18
+    },
+    {
+      "humanName": 52,
+      "parentHumanName": 51
+    },
+    {
+      "humanName": 53,
+      "parentHumanName": 52
+    },
+    {
+      "humanName": 54,
+      "parentHumanName": 8
+    }
+  ],
+  "HumanEnum": [
+    {
+      "humanName": "Hips",
+      "humanID": 0
+    },
+    {
+      "humanName": "LeftUpperLeg",
+      "humanID": 1
+    },
+    {
+      "humanName": "RightUpperLeg",
+      "humanID": 2
+    },
+    {
+      "humanName": "LeftLowerLeg",
+      "humanID": 3
+    },
+    {
+      "humanName": "RightLowerLeg",
+      "humanID": 4
+    },
+    {
+      "humanName": "LeftFoot",
+      "humanID": 5
+    },
+    {
+      "humanName": "RightFoot",
+      "humanID": 6
+    },
+    {
+      "humanName": "Spine",
+      "humanID": 7
+    },
+    {
+      "humanName": "Chest",
+      "humanID": 8
+    },
+    {
+      "humanName": "Neck",
+      "humanID": 9
+    },
+    {
+      "humanName": "Head",
+      "humanID": 10
+    },
+    {
+      "humanName": "LeftShoulder",
+      "humanID": 11
+    },
+    {
+      "humanName": "RightShoulder",
+      "humanID": 12
+    },
+    {
+      "humanName": "LeftUpperArm",
+      "humanID": 13
+    },
+    {
+      "humanName": "RightUpperArm",
+      "humanID": 14
+    },
+    {
+      "humanName": "LeftLowerArm",
+      "humanID": 15
+    },
+    {
+      "humanName": "RightLowerArm",
+      "humanID": 16
+    },
+    {
+      "humanName": "LeftHand",
+      "humanID": 17
+    },
+    {
+      "humanName": "RightHand",
+      "humanID": 18
+    },
+    {
+      "humanName": "LeftToes",
+      "humanID": 19
+    },
+    {
+      "humanName": "RightToes",
+      "humanID": 20
+    },
+    {
+      "humanName": "LeftEye",
+      "humanID": 21
+    },
+    {
+      "humanName": "RightEye",
+      "humanID": 22
+    },
+    {
+      "humanName": "Jaw",
+      "humanID": 23
+    },
+    {
+      "humanName": "LeftThumbProximal",
+      "humanID": 24
+    },
+    {
+      "humanName": "LeftThumbIntermediate",
+      "humanID": 25
+    },
+    {
+      "humanName": "LeftThumbDistal",
+      "humanID": 26
+    },
+    {
+      "humanName": "LeftIndexProximal",
+      "humanID": 27
+    },
+    {
+      "humanName": "LeftIndexIntermediate",
+      "humanID": 28
+    },
+    {
+      "humanName": "LeftIndexDistal",
+      "humanID": 29
+    },
+    {
+      "humanName": "LeftMiddleProximal",
+      "humanID": 30
+    },
+    {
+      "humanName": "LeftMiddleIntermediate",
+      "humanID": 31
+    },
+    {
+      "humanName": "LeftMiddleDistal",
+      "humanID": 32
+    },
+    {
+      "humanName": "LeftRingProximal",
+      "humanID": 33
+    },
+    {
+      "humanName": "LeftRingIntermediate",
+      "humanID": 34
+    },
+    {
+      "humanName": "LeftRingDistal",
+      "humanID": 35
+    },
+    {
+      "humanName": "LeftLittleProximal",
+      "humanID": 36
+    },
+    {
+      "humanName": "LeftLittleIntermediate",
+      "humanID": 37
+    },
+    {
+      "humanName": "LeftLittleDistal",
+      "humanID": 38
+    },
+    {
+      "humanName": "RightThumbProximal",
+      "humanID": 39
+    },
+    {
+      "humanName": "RightThumbIntermediate",
+      "humanID": 40
+    },
+    {
+      "humanName": "RightThumbDistal",
+      "humanID": 41
+    },
+    {
+      "humanName": "RightIndexProximal",
+      "humanID": 42
+    },
+    {
+      "humanName": "RightIndexIntermediate",
+      "humanID": 43
+    },
+    {
+      "humanName": "RightIndexDistal",
+      "humanID": 44
+    },
+    {
+      "humanName": "RightMiddleProximal",
+      "humanID": 45
+    },
+    {
+      "humanName": "RightMiddleIntermediate",
+      "humanID": 46
+    },
+    {
+      "humanName": "RightMiddleDistal",
+      "humanID": 47
+    },
+    {
+      "humanName": "RightRingProximal",
+      "humanID": 48
+    },
+    {
+      "humanName": "RightRingIntermediate",
+      "humanID": 49
+    },
+    {
+      "humanName": "RightRingDistal",
+      "humanID": 50
+    },
+    {
+      "humanName": "RightLittleProximal",
+      "humanID": 51
+    },
+    {
+      "humanName": "RightLittleIntermediate",
+      "humanID": 52
+    },
+    {
+      "humanName": "RightLittleDistal",
+      "humanID": 53
+    },
+    {
+      "humanName": "UpperChest",
+      "humanID": 54
+    }
+  ]
+}
