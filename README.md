@@ -73,6 +73,6 @@ l'écriture, afin de rester correct même quand un os a un parent transformé.
 ## Modèles de la démo
 
 La démo détecte automatiquement les fichiers FBX présents dans `Models` et
-n'affiche que les avatars disponibles. Le dépôt GitHub contient uniquement
-`Models/Mixamo.fbx`. `Models/DazGenesis8.fbx` reste volontairement local et est
-exclu par `.gitignore`.
+n'affiche que les avatars disponibles. Sur GitHub, `Mixamo.fbx` est fourni comme
+asset de la release `v1.0.0` et sert de repli lorsque le fichier local est absent.
+`Models/DazGenesis8.fbx` reste volontairement local et est exclu par `.gitignore`.
