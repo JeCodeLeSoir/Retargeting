@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.vite/
+
+# Le modèle Daz reste local et ne doit jamais être publié sur GitHub.
+Models/DazGenesis8.fbx
