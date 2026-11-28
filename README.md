@@ -1,11 +1,17 @@
-# Port Three.js de `RetargetProtocol.cs`
+# Port Three.js de `RetargetProtocol.cs` et `RetargetAnim.cs`
 
 Cette version transpose la logique des deux scripts Unity du dossier `Exemple` :
 
 - parcours et recherche des os par nom ;
 - création d'un squelette de référence ;
 - conservation des offsets de rotation calculés à l'initialisation ;
-- copie des rotations `référence → source` ou `source → référence`.
+- copie des rotations `référence → source` ou `source → référence` ;
+- transfert d'une pose entre deux avatars via les `HumanBodyBones` communs ;
+- correction de l'axe avant et transfert du mouvement de racine.
+
+`RetargetAnim.update()` impose l'ordre animation → protocole source → transfert
+→ protocole cible. La version Three.js ne dépend donc pas de l'ordre implicite
+de plusieurs appels `Update()`.
 
 ## Installation
 
@@ -32,6 +38,25 @@ function animate() {
   renderer.render(scene, camera);
 }
 animate();
+```
+
+Pour transférer la pose vers un second avatar :
+
+```js
+import { RetargetAnim } from "./src/RetargetAnim.js";
+
+const transfer = new RetargetAnim({
+  source: sourceProtocol,
+  target: targetProtocol,
+  sourceForwardAngle: 0,
+  targetForwardAngle: 90,
+});
+
+function animate() {
+  sourceMixer.update(clock.getDelta());
+  transfer.update();
+  renderer.render(scene, camera);
+}
 ```
 
 Par défaut, les marqueurs de référence pilotent le squelette du modèle, comme
@@ -72,7 +97,7 @@ l'écriture, afin de rester correct même quand un os a un parent transformé.
 
 ## Modèles de la démo
 
-La démo détecte automatiquement les fichiers FBX présents dans `Models` et
-n'affiche que les avatars disponibles. Sur GitHub, `Mixamo.fbx` est fourni comme
+La démo détecte automatiquement les fichiers FBX présents dans `Models`, permet
+de choisir séparément la source et la cible, puis affiche les deux avatars. Sur GitHub, `Mixamo.fbx` est fourni comme
 asset de la release `v1.0.0` et sert de repli lorsque le fichier local est absent.
 `Models/DazGenesis8.fbx` reste volontairement local et est exclu par `.gitignore`.

@@ -2,5 +2,6 @@ node_modules/
 dist/
 .vite/
 
-# Le modèle Daz reste local et ne doit jamais être publié sur GitHub.
+# Les modèles FBX restent locaux et ne doivent jamais être publiés sur GitHub.
+Models/Mixamo.fbx
 Models/DazGenesis8.fbx

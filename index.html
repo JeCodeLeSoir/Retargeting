@@ -28,20 +28,26 @@
       <section class="hero-copy" aria-labelledby="demoTitle">
         <p class="eyebrow">LIVE SKELETON TRANSFER</p>
         <h1 id="demoTitle">Un même mouvement.<br /><em>Deux structures.</em></h1>
-        <p id="modelDescription">La pose Mixamo est convertie en rotations humanoïdes grâce aux offsets du protocole Unity.</p>
+        <p id="modelDescription">Le mouvement du protocole source est transféré vers un second avatar par HumanBodyBones.</p>
       </section>
 
       <aside class="panel" aria-label="Contrôles de la démonstration">
-        <label class="model-picker">
-          <span class="label">AVATAR &amp; MAPPING</span>
-          <select id="modelSelect" aria-label="Choisir un avatar et son mapping"></select>
-        </label>
+        <div class="model-grid">
+          <label class="model-picker">
+            <span class="label">SOURCE</span>
+            <select id="sourceModelSelect" aria-label="Choisir l’avatar source"></select>
+          </label>
+          <label class="model-picker">
+            <span class="label">CIBLE</span>
+            <select id="targetModelSelect" aria-label="Choisir l’avatar cible"></select>
+          </label>
+        </div>
         <div class="panel-heading">
           <div>
             <span class="label">MODE ACTIF</span>
-            <strong id="modeLabel">Source → Référence</strong>
+            <strong id="modeLabel">Source → Cible</strong>
           </div>
-          <button id="directionButton" class="icon-button" type="button" title="Inverser le retargeting" aria-label="Inverser le retargeting">⇄</button>
+          <button id="directionButton" class="icon-button" type="button" title="Échanger la source et la cible" aria-label="Échanger la source et la cible">⇄</button>
         </div>
 
         <div class="meter-row">
@@ -54,10 +60,15 @@
           <input id="speed" type="range" min="0" max="2" step="0.1" value="1" />
         </label>
 
+        <label class="range-control">
+          <span>Orientation cible <output id="forwardAngleValue">0°</output></span>
+          <input id="forwardAngle" type="range" min="-180" max="180" step="5" value="0" />
+        </label>
+
         <div class="toggle-list">
-          <label><span>Squelette source</span><input id="sourceSkeleton" type="checkbox" checked /><i></i></label>
+          <label><span>Squelettes</span><input id="sourceSkeleton" type="checkbox" checked /><i></i></label>
           <label><span>Référence humanoïde</span><input id="referenceSkeleton" type="checkbox" checked /><i></i></label>
-          <label><span>Maillage</span><input id="meshVisibility" type="checkbox" checked /><i></i></label>
+          <label><span>Maillages</span><input id="meshVisibility" type="checkbox" checked /><i></i></label>
         </div>
 
         <button id="playButton" class="primary-button" type="button"><span id="playIcon">Ⅱ</span><span id="playLabel">Mettre en pause</span></button>
@@ -66,11 +77,11 @@
 
       <div class="legend" aria-hidden="true">
         <span><i class="cyan"></i>Source FBX</span>
-        <span><i class="orange"></i>Référence humanoïde</span>
+        <span><i class="orange"></i>Cible retargetée</span>
       </div>
 
       <div id="errorPanel" class="error-panel" hidden></div>
     </main>
-    <script type="module" src="/src/demo.js"></script>
+    <script type="module" src="/src/demo-v2.js"></script>
   </body>
 </html>

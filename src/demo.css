@@ -48,7 +48,8 @@ h1 em { color: #28d7e8; font-style: normal; font-weight: 650; }
   box-shadow: 0 24px 80px rgba(0,0,0,.45); backdrop-filter: blur(18px);
 }
 .panel-heading { display: flex; align-items: center; justify-content: space-between; padding-bottom: 18px; border-bottom: 1px solid rgba(255,255,255,.08); }
-.model-picker { display: grid; gap: 8px; margin: 0 0 18px; }
+.model-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 0 0 18px; }
+.model-picker { display: grid; gap: 8px; min-width: 0; }
 .model-picker .label { margin: 0; }
 .model-picker select {
   width: 100%; min-height: 42px; padding: 0 40px 0 12px; border: 1px solid #31414a;
@@ -69,7 +70,7 @@ h1 em { color: #28d7e8; font-style: normal; font-weight: 650; }
 .meter-row div + div { padding-left: 18px; border-left: 1px solid rgba(255,255,255,.08); }
 .meter-row span { font: 300 1.7rem/1 ui-monospace, monospace; }
 .meter-row small { color: #657078; font-size: .58rem; letter-spacing: .14em; }
-.range-control { display: grid; gap: 11px; padding: 0 0 18px; }
+.range-control { display: grid; gap: 11px; padding: 0 0 14px; }
 .range-control > span { display: flex; justify-content: space-between; color: #abb5ba; font-size: .78rem; }
 .range-control output { color: #28d7e8; font-family: ui-monospace, monospace; }
 input[type="range"] { width: 100%; height: 3px; accent-color: #28d7e8; cursor: pointer; }
